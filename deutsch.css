@@ -1,0 +1,359 @@
+/*
+
+Deutsch.css -  Simplistic yet futuristic CSS Framework
+
+v0.1.1 - 05.01.2022
+
+Twitter: @saintly2k
+GitHub: @saintly2k
+
+*/
+
+/* Main Stuff */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container-small {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container-fluid {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Text Colors */
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-black {
+    color: #000000;
+}
+
+.text-success {
+    color: #33cc33;
+}
+
+.text-info {
+    color: #00ccff;
+}
+
+.text-danger {
+    color: #ff0000;
+}
+
+.text-warning {
+    color: #ff9900;
+}
+
+/* Backgrounds */
+
+.bg-light {
+    background: white;
+    color: black
+}
+
+.bg-dark {
+    background: #100;
+    color: white;
+}
+
+/* Text Styles */
+
+.slogan {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.is-under {
+    text-decoration: underline;
+}
+
+.is-bold {
+    font-weight: bolder;
+}
+
+a {
+    color: #00ccff;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    transition: .3s;
+}
+
+a:hover {
+    color: #008fb3;
+    transition: .1s;
+    text-decoration: underline;
+}
+
+a:before {
+    color: #000000;
+    content: "[";
+}
+
+a:after {
+    color: #000000;
+    content: "]";
+}
+
+sup,
+sub {
+    position: relative;
+    height: 1%;
+    line-height: 1.2em;
+    vertical-align: middle;
+    top: -0.25em;
+}
+
+sub {
+    top: 0.25em;
+}
+
+/* Align Styles */
+
+.is-center {
+    text-align: center;
+}
+
+.is-left {
+    text-align: left;
+}
+
+.is-right {
+    text-align: right;
+}
+
+/* Button Styles */
+
+.btn {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    background: transparent;
+    border: 0.1em solid #000000;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    color: #000000;
+    background-color: #d6dbd9;
+}
+
+.btn.btn-success {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    background: transparent;
+    border: 0.1em solid #33cc33;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.btn.btn-success:hover {
+    color: #000000;
+    background-color: #33cc33;
+}
+
+.btn.btn-info {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    background: transparent;
+    border: 0.1em solid #00ccff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.btn.btn-info:hover {
+    color: #000000;
+    background-color: #00ccff;
+}
+
+.btn.btn-danger {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    background: transparent;
+    border: 0.1em solid #ff0000;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.btn.btn-danger:hover {
+    color: #000000;
+    background-color: #ff0000;
+}
+
+.btn.btn-warning {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    background: transparent;
+    border: 0.1em solid #ff9900;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.btn.btn-warning:hover {
+    color: #000000;
+    background-color: #ff9900;
+}
+
+/* Panels */
+
+.panel {
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.panel-title {
+    padding: 5px;
+    background: #e6e6e6;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 2px solid #000000;
+}
+
+.panel-body {
+    padding: 5px;
+    background: #ffffff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Grid Layout */
+
+.grid .col-1 {
+    width: 8.33%;
+}
+
+.grid .col-2 {
+    width: 16.66%;
+}
+
+.grid .col-3 {
+    width: 25%;
+}
+
+.grid .col-4 {
+    width: 33.33%;
+}
+
+.grid .col-5 {
+    width: 41.66%;
+}
+
+.grid .col-6 {
+    width: 50%;
+}
+
+.grid .col-7 {
+    width: 58.33%;
+}
+
+.grid .col-8 {
+    width: 66.66%;
+}
+
+.grid .col-9 {
+    width: 75%;
+}
+
+.grid .col-10 {
+    width: 83.33%;
+}
+
+.grid .col-11 {
+    width: 91.66%;
+}
+
+.grid .col-12 {
+    width: 100%;
+}
+
+.grid::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 3px;
+}
+
+/* Paragraph Styles */
+
+.dis-block {
+    font-display: block;
+}
+
+/* Custom Styles */
+
+.half {
+    max-width: 200px;
+}
