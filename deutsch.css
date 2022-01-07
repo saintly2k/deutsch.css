@@ -133,7 +133,7 @@ sup,
 sub {
     position: relative;
     height: 1%;
-    line-height: 1.2em;
+    line-height: 1.0em;
     vertical-align: middle;
     top: -0.25em;
 }
